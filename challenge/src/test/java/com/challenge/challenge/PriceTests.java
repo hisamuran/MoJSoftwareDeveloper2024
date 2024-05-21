@@ -14,7 +14,7 @@ import com.challenge.enums.TransportTypes;
 public class PriceTests {
 
     @Test
-	public void testValidadeBusException() {
+	public void testValidateBus() {
 
 		OysterCard card = new OysterCard(Price.BUS_FARE - 1f);
 		Price price = new Price();
@@ -22,7 +22,7 @@ public class PriceTests {
 	}
 
 	@Test
-	public void testValidadeTubePriceException() {
+	public void testValidateTubePrice() {
 
 		OysterCard card = new OysterCard(Price.MAX_FARE - 1f);
 		Price price = new Price();
